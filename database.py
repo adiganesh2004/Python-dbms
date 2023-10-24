@@ -9,12 +9,11 @@ data ={"emp_details":[{'Name': 'Alex', 'dept_id': 6, 'emp_id': 1},
     {'Name': 'Magnus', 'dept_id': 4, 'emp_id': 5}]}
 with open("database.json", "w") as csvfile:
         json.dump( data,csvfile)
-"""fieldnames = ['Name', 'dept_id', 'emp_id'] 
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerows(y)
+        fieldnames = ['Name', 'dept_id', 'emp_id'] 
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(y)
 
-"""
 with open("database.json","r") as reader:
     var=json.load(reader)
 
